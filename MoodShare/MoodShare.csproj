@@ -148,6 +148,7 @@
     <Content Include="img\profile.png" />
     <Content Include="Content\moodshare.css" />
     <Content Include="Scripts\moodshare.js" />
+    <Content Include="Scripts\jqBootstrapValidation.js" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
