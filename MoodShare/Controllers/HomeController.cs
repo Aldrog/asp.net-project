@@ -11,8 +11,12 @@ namespace MoodShare.Controllers
     {
         public ActionResult Index ()
         {
+            IndexModel model = new IndexModel ();
+            model.moods = new List<IndexModel.Mood> {
+                new IndexModel.Mood{name = "Vital"}
+            };
             ViewBag.Title = "MoodShare";
-            return View ();
+            return View (model);
         }
     }
 }

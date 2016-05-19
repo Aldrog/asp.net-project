@@ -78,6 +78,7 @@
     </Compile>
     <Compile Include="Common\DynamicJsonConverter.cs" />
     <Compile Include="Common\Util.cs" />
+    <Compile Include="Models\IndexModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
