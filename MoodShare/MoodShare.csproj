@@ -106,19 +106,6 @@
     <Content Include="Scripts\cbpAnimatedHeader.min.js" />
     <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\contact_me.js" />
-    <Content Include="Scripts\freelancer.js" />
-    <Content Include="Views\Home\Templates\About.html" />
-    <Content Include="Views\Home\Templates\Admin_header.html" />
-    <Content Include="Views\Home\Templates\Contact.html" />
-    <Content Include="Views\Home\Templates\Footer.html" />
-    <Content Include="Views\Home\Templates\Head.html" />
-    <Content Include="Views\Home\Templates\Header.html" />
-    <Content Include="Views\Home\Templates\Navbar.html" />
-    <Content Include="Views\Home\Templates\Portfolio.html" />
-    <Content Include="Views\Home\Templates\PortfolioItem.html" />
-    <Content Include="Views\Home\Templates\PortfolioItemModal.html" />
-    <Content Include="Views\Home\Templates\SocialIcon.html" />
-    <Content Include="Content\freelancer.css" />
     <Content Include="Content\font-awesome\css\font-awesome.css" />
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome\fonts\FontAwesome.otf" />
@@ -159,6 +146,8 @@
     <Content Include="img\portfolio\safe.png" />
     <Content Include="img\portfolio\submarine.png" />
     <Content Include="img\profile.png" />
+    <Content Include="Content\moodshare.css" />
+    <Content Include="Scripts\moodshare.js" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -176,6 +165,5 @@
     <None Include="Content\bootstrap.min.css.map" />
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="img\sb_favicon.ico" />
-    <None Include="img\Thumbs.db" />
   </ItemGroup>
 </Project>
