@@ -69,7 +69,7 @@
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
-    <Folder Include="img\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -139,16 +139,10 @@
     <Content Include="Content\font-awesome\scss\_stacked.scss" />
     <Content Include="Content\font-awesome\scss\_variables.scss" />
     <Content Include="Content\font-awesome\scss\font-awesome.scss" />
-    <Content Include="img\portfolio\cabin.png" />
-    <Content Include="img\portfolio\cake.png" />
-    <Content Include="img\portfolio\circus.png" />
-    <Content Include="img\portfolio\game.png" />
-    <Content Include="img\portfolio\safe.png" />
-    <Content Include="img\portfolio\submarine.png" />
-    <Content Include="img\profile.png" />
     <Content Include="Content\moodshare.css" />
     <Content Include="Scripts\moodshare.js" />
     <Content Include="Scripts\jqBootstrapValidation.js" />
+    <Content Include="Images\icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -165,6 +159,5 @@
     <None Include="Content\bootstrap.css.map" />
     <None Include="Content\bootstrap.min.css.map" />
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="img\sb_favicon.ico" />
   </ItemGroup>
 </Project>
