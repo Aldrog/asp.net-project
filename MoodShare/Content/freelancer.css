@@ -391,7 +391,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.moods-modal .modal-content {
+.mood-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -402,20 +402,20 @@ footer .footer-below {
     box-shadow: none;
 }
 
-.moods-modal .modal-content h2 {
+.mood-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
 }
 
-.moods-modal .modal-content img {
+.mood-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.moods-modal .modal-content .item-details {
+.mood-modal .modal-content .item-details {
     margin: 30px 0;
 }
 
-.moods-modal .close-modal {
+.mood-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -425,11 +425,11 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.moods-modal .close-modal:hover {
+.mood-modal .close-modal:hover {
     opacity: .3;
 }
 
-.moods-modal .close-modal .lr {
+.mood-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -440,7 +440,7 @@ footer .footer-below {
     transform: rotate(45deg);
 }
 
-.moods-modal .close-modal .lr .rl {
+.mood-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
