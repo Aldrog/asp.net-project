@@ -200,19 +200,19 @@ section.success {
     }
 }
 
-#portfolio .portfolio-item {
+#moods .moods-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#moods .moods-item .moods-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
+#moods .moods-item .moods-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -223,11 +223,11 @@ section.success {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#moods .moods-item .moods-link .caption:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#moods .moods-item .moods-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -238,21 +238,21 @@ section.success {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#moods .moods-item .moods-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#moods .moods-item .moods-link .caption .caption-content h3,
+#moods .moods-item .moods-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#portfolio * {
+#moods * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #moods .moods-item {
         margin: 0 0 30px;
     }
 }
@@ -391,7 +391,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.moods-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -402,20 +402,20 @@ footer .footer-below {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.moods-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content img {
+.moods-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content .item-details {
+.moods-modal .modal-content .item-details {
     margin: 30px 0;
 }
 
-.portfolio-modal .close-modal {
+.moods-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -425,11 +425,11 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.moods-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.moods-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -440,7 +440,7 @@ footer .footer-below {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.moods-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;

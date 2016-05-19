@@ -13,7 +13,8 @@ namespace MoodShare.Controllers
         {
             IndexModel model = new IndexModel ();
             model.moods = new List<IndexModel.Mood> {
-                new IndexModel.Mood{name = "Vital"}
+                new IndexModel.Mood{id = 1, name = "Vital"}
+              , new IndexModel.Mood{id = 2, name = "Cool"}
             };
             ViewBag.Title = "MoodShare";
             return View (model);

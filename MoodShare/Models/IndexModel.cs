@@ -6,6 +6,7 @@ namespace MoodShare
     public class IndexModel
     {
         public struct Mood {
+            public int id;
             public string name;
         }
         public List<Mood> moods;
