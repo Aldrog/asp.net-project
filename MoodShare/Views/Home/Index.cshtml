@@ -13,7 +13,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <img class="img-responsive" src="Images/icon.png" align="left" alt="">
-                <a class="navbar-brand" href="#page-top">@ViewBag.Title</a>
+                <a class="navbar-brand" href="#page-top">MoodShare</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -23,7 +23,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#moods">Playlists</a>
+                        <a href="#moods">Moods</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Moods</h2>
+                    <h2>Popular Moods</h2>
                     <hr class="note-primary">
                 </div>
             </div>
@@ -68,7 +68,7 @@
                                     <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                            <img src="Data/@(mood.id)/img/title.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
                 }
@@ -135,17 +135,17 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>Playlist Title</h2>
+                                <h2>@mood.name</h2>
                                 <hr class="note-primary">
-                                <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                                <img src="Data/@(mood.id)/img/title.jpg" class="img-responsive img-centered" alt="">
                                 <p>Placeholder for playlist</p>
                                 <ul class="list-inline item-details">
                                     <li>Author:
-                                        <strong><a href="missing-link">Playlist author</a>
+                                        <strong><a href="@Url.Action("Users", mood.author)">@mood.author</a>
                                         </strong>
                                     </li>
-                                    <li>Date:
-                                        <strong>May 2016</strong>
+                                    <li>Added at:
+                                        <strong>@mood.creationTime</strong>
                                     </li>
                                 </ul>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>

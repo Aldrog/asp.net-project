@@ -10,21 +10,25 @@ namespace MoodShare
         public struct Mood {
             public int id;
             public string name;
+            public string author;
+            public DateTime creationTime;
         }
         public List<Mood> moods;
 
         public IndexModel ()
         {
             moods = new List<Mood> ();
-            IDbConnection conn = new SqliteConnection ("Data Source=moodbase.db");
+            IDbConnection conn = new SqliteConnection ("Data Source=Data/database.db");
             conn.Open ();
             IDbCommand cmd = conn.CreateCommand ();
-            cmd.CommandText = "SELECT id, name FROM moods";
+            cmd.CommandText = "SELECT id, name, author, creationTime FROM moods";
             IDataReader reader = cmd.ExecuteReader ();
             while (reader.Read ()) {
                 int id = reader.GetInt32 (0);
                 string name = reader.GetString (1);
-                moods.Add (new Mood { id = id, name = name });
+                string author = reader.GetString (2);
+                DateTime creationTime = DateTime.FromFileTimeUtc(reader.GetInt64 (3));
+                moods.Add (new Mood { id = id, name = name, author = author, creationTime = creationTime });
             }
         }
     }
