@@ -90,11 +90,6 @@ header .container {
     padding-bottom: 50px;
 }
 
-header img {
-    display: block;
-    margin: 0 auto 20px;
-}
-
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
@@ -166,6 +161,12 @@ header .intro-text .skills {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+}
+
+.navbar img {
+    display: inline;
+    margin: 5px 5px 5px;
+    width: 38px
 }
 
 .navbar-default,
