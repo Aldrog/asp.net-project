@@ -62,8 +62,9 @@
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.0\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Data.Sqlite" />
     <Reference Include="System.Configuration" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
@@ -159,5 +160,6 @@
     <None Include="Content\bootstrap.css.map" />
     <None Include="Content\bootstrap.min.css.map" />
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="moodbase.db" />
   </ItemGroup>
 </Project>
