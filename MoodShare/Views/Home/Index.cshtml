@@ -138,7 +138,12 @@
                                 <h2>@mood.name</h2>
                                 <hr class="note-primary">
                                 <img src="Data/@(mood.id)/img/title.jpg" class="img-responsive img-centered" alt="">
-                                <p>Placeholder for playlist</p>
+                                @foreach(var track in Model.trackList(mood.id)) {
+                                    <p>@(track.number). @track.name (@track.performer)</p>
+                                    <audio controls>
+                                    <source src="@Url.Encode(track.url)"/>
+                                    </audio>
+                                }
                                 <ul class="list-inline item-details">
                                     <li>Author:
                                         <strong><a href="@Url.Action("Users", mood.author)">@mood.author</a>
